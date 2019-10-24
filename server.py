@@ -56,7 +56,6 @@ class S(BaseHTTPRequestHandler):
             sock.sendto(msg, (ch[0], 8888))
 
 
-        print(body)
         send('front', body[0:6])
         send('left', body[6:12])
         send('right', body[12:18])
