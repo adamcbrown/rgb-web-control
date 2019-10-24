@@ -44,6 +44,11 @@
 					})
 				}
 
+				$('#turn-off').click(function(event) {
+					$('.light').val("#000000")
+					apply_colors()
+				});
+
 				$('#apply-colors').click(function(event) {
 					apply_colors()
 				});
@@ -60,8 +65,11 @@
 			<div class='table'>
 				<div class='contents'>
 					<input id='match-colors' type='checkbox'> Make Colors Same
+					<br>
 					<input id='auto-apply' type='checkbox'> Auto Apply Colors
 					<br><br>
+					<button id='turn-off'>Turn Off</button>
+					<br>
 					<button id='apply-colors'>Apply Colors</button>
 				</div>
 			</div>
